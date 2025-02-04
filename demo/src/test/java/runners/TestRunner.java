@@ -13,6 +13,7 @@ import io.cucumber.junit.CucumberOptions;
         "html:target/cucumber-reports.html",
         "json:target/cucumber.json"
     },
+    tags = "@test",
     monochrome = true
 )
 public class TestRunner {
