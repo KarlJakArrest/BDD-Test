@@ -32,12 +32,9 @@ public class ApiTestSteps {
         public void theResponseShouldContainSecond(String key){
             assertTrue(response.getBody().asString().contains(key));
         }
-    
-    
-    @Then("match response.userId[{int}].id == {int}")
-    public void match_response_user_id_id(Integer int1, Integer int2) {
-        assertTrue(response.getBody().equals(id_return));
-    throw new io.cucumber.java.PendingException();
-}
-
+        @Then("match response.userId[{int}].id == {int}")
+        public void match_response_user_id_id(Integer int1, Integer int2) {
+            assertTrue(response.getBody().equals(id_return));
+        throw new io.cucumber.java.PendingException();
+        }
 }
